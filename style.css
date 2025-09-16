@@ -189,6 +189,7 @@ h1 {
   align-items: center;
   gap: 12px;
   margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 .alert-info .icon-info {
@@ -201,4 +202,38 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.heber {
+  background-color: var(--grey);
+  padding: 40px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  flex: 2;
+}
+
+.heber-content img {
+  height: 150px;
+  width: auto;
+}
+
+.heber-container {
+  background-color: var(--white);
+  border-radius: 20px;
+}
+
+#hebers {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.heber h2 {
+  margin-top: 5px;
+}
+
+.heber-content {
+  box-shadow: none;
 }
