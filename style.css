@@ -404,24 +404,24 @@ h1 {
     padding: 0 20px;
   }
 
-  #hostings {
+  #hebers {
     flex-direction: column-reverse;
   }
 
-  .hosting {
+  .heber {
     max-width: none;
     width: auto;
   }
 
-  .hosting .cards {
+  .heber .heber-container {
     gap: 30px;
   }
 
-  .hosting .cards a {
+  .heber .heber-container a {
     width: 31.1%;
   }
 
-  .popular .cards {
+  .popular .heber-container {
     flex-wrap: nowrap;
   }
 }
@@ -429,15 +429,15 @@ h1 {
 /* Pour tablettes */
 
 @media screen and (max-width: 1070px) {
-  .popular .cards {
+  .popular .heber-container {
     flex-direction: column;
   }
 
-  .popular .cards .card {
+  .popular .heber-container .heber-content {
     width: auto;
   }
 
-  .popular .cards .card img {
+  .popular .heber-container .heber-content img {
     width: 250px;
   }
 
@@ -445,7 +445,7 @@ h1 {
     gap: 14%;
   }
 
-  .hosting .cards a {
+  .heber .heber-container a {
     width: 47.6%;
   }
 
@@ -548,16 +548,16 @@ h1 {
     padding: 0 20px;
   }
 
-  .hosting {
+  .heber {
     background-color: transparent;
     padding: 0 20px;
   }
 
-  .hosting .cards {
+  .heber .heber-container {
     gap: 12px;
   }
 
-  .hosting .cards a {
+  .heber .heber-container a {
     width: 100%;
   }
 
@@ -566,11 +566,11 @@ h1 {
     padding: 40px 20px;
   }
 
-  .popular .cards {
+  .popular .heber-container {
     gap: 12px;
   }
 
-  .popular .cards .card img {
+  .popular .heber-container .heber-content img {
     width: 130px;
   }
 
