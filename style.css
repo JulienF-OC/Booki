@@ -118,10 +118,14 @@ header nav a:hover,
   display: none;
 }
 
+main {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 1420px;
+}
+
 body {
-  margin-left: 245px;
   font-family: Raleway, sans-serif;
-  margin-right: 245px;
 }
 
 h1 {
@@ -157,9 +161,9 @@ h1 {
   box-shadow: inset 0 0 0 2px var(--dark-grey);
   background-size: 200%;
   cursor: pointer;
-  transition: 0.5s, transform 0.3s ease;
+  transition: background-position 0.5s, transform 0.3s ease;
   background: linear-gradient(to left, transparent 50%, var(--light-blue) 50%)
-    right;
+    left;
 }
 
 .filtres ul li:hover {
@@ -389,4 +393,120 @@ h1 {
 
 .popular .heber-container .heber-content .content .rating .locked {
   color: var(--dark-grey);
+}
+
+.activity {
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.activity .heber-container {
+  display: flex;
+  justify-content: space-between;
+  height: 450px;
+}
+
+.activity .heber-container a {
+  text-decoration: none;
+}
+
+.activity .heber-container .group {
+  width: 22%;
+  height: 100%;
+}
+
+.activity .heber-container .group .heber-content {
+  background-color: var(--white);
+  box-shadow: 0 0 15px 3px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  border-radius: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.activity .heber-container .group .heber-content:hover {
+  box-shadow: 0 0 15px 6px rgba(0, 0, 0, 0.1);
+  transform: scale(1.02);
+}
+
+.activity .heber-container .group img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+
+.activity .heber-container .group .heber-content h4 {
+  color: var(--black);
+  padding: 5px 5px;
+}
+
+.activity .heber-container .dual {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 45px;
+}
+
+.activity .heber-container .dual .heber-content {
+  height: 200px;
+}
+
+.activity .heber-container .dual .heber-content .large {
+  height: 150px;
+}
+
+.activity .heber-container .dual .heber-content .small {
+  height: 120px;
+}
+
+footer {
+  background-color: var(--grey);
+  margin-top: 60px;
+  max-width: 100%;
+}
+
+footer .footer-container {
+  max-width: 1440px;
+  margin: auto;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: row;
+  gap: 250px;
+}
+
+footer .footer-container .footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+footer .footer-container .footer-links h3 {
+  text-align: left;
+  margin: 0 0 8px 0;
+  padding: 0;
+  font-size: 18px;
+}
+
+footer .footer-container .footer-links ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+footer .footer-container .footer-links ul li a {
+  font-weight: 500;
+  color: var(--black);
+  text-decoration: none;
+}
+
+footer .footer-container .footer-links ul li a:hover {
+  text-decoration: underline;
 }
